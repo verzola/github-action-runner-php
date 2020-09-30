@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  runner:
+    image: github-action-runner-php
+    build: .
+    environment:
+      - ORGANIZATION=devdicas
+      - ACCESS_TOKEN=AAWY4MVCW6VLD37OT26F4SC7OUTVY
