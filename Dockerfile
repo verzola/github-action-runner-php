@@ -158,15 +158,15 @@ RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - \
 # cleanup apt
 RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-# copy over the start.sh script
-COPY start.sh start.sh
+# copy over the entrypoint.sh script
+COPY entrypoint.sh entrypoint.sh
 
 # make the script executable
-RUN chmod +x start.sh
+RUN chmod +x entrypoint.sh
 
 # since the config and run script for actions are not allowed to be run by root,
 # set the user to "docker" so all subsequent commands are run as the docker user
 USER docker
 
-# set the entrypoint to the start.sh script
-ENTRYPOINT ["./start.sh"]
+# set the entrypoint to the entrypoint.sh script
+ENTRYPOINT ["./entrypoint.sh"]
