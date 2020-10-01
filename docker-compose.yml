@@ -7,3 +7,4 @@ services:
     environment:
       - ORGANIZATION=devdicas
       - ACCESS_TOKEN=8e69339dfc3f1181d7f925289de3191a62447906
+    scale: 10
