@@ -6,4 +6,4 @@ services:
     build: .
     environment:
       - ORGANIZATION=devdicas
-      - ACCESS_TOKEN=AAWY4MVCW6VLD37OT26F4SC7OUTVY
+      - ACCESS_TOKEN=8e69339dfc3f1181d7f925289de3191a62447906

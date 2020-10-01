@@ -1,6 +1,8 @@
 # base
 FROM ubuntu:20.04
 
+ENV DEBIAN_FRONTEND noninteractive
+
 # set the github runner version
 ARG RUNNER_VERSION="2.273.4"
 
